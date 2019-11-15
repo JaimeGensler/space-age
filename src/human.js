@@ -27,7 +27,7 @@ export class Human {
       Uranus: 30688,
       Neptune: 60200
     }
-    return Math.round( (days/planets[planet])*100 )/100;
+    return (Math.round( (days/planets[planet])*100 )/100);
   }
 
   yearsLeft(planet) {
@@ -36,8 +36,8 @@ export class Human {
     if (this.ses = 'Upper') expectedAge += 5;
     if (this.ses = 'Lower') expectedAge -= 5;
 
-    const yearsLeft = (expectedAge - this.age).toFixed(2); //can't manipulate a string (below)
+    const yearsLeft = this.getPlanetTime(planet, 365*(expectedAge - this.age));
     if (yearsLeft < 0) return (`surpassed life expectancy by ${-1 * yearsLeft} years'`);
-    return (`${yearsLeft} Earth years left`);
+    return (`${yearsLeft} ${planet} years left`);
   }
 }
