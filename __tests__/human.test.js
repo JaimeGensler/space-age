@@ -27,6 +27,6 @@ describe('Human', () => {
     expect(reusableHuman.getPlanetAge('Mars')).toEqual('11.70');
   });
   test('.getPlanetAge("Jupiter") should return age in Jupiter years', () => {
-    expect(reusableHuman.getPlanetAge('Jupiter')).toEqual('1.86');
+    expect(reusableHuman.getPlanetAge('Jupiter')).toEqual('1.85');
   });
 });

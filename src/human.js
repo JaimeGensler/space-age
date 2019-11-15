@@ -20,6 +20,8 @@ export class Human {
         return (this.ageInDays/225).toFixed(2);
       case 'Mars':
         return (this.ageInDays/687).toFixed(2);
+      case 'Jupiter':
+        return (this.ageInDays/4332).toFixed(2);
     }
   }
 }
