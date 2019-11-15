@@ -35,4 +35,7 @@ describe('Human', () => {
   test('.getPlanetAge("Uranus") should return age in Uranus years', () => {
     expect(reusableHuman.getPlanetAge('Uranus')).toEqual('0.26');
   });
+  test('.getPlanetAge("Neptune") should return age in Neptune years', () => {
+    expect(reusableHuman.getPlanetAge('Neptune')).toEqual('0.13');
+  });
 });
