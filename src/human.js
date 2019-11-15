@@ -1,7 +1,9 @@
 export class Human {
-  constructor(age) {
+  constructor(age, gender, ses) {
     this.age = age;
     this.ageInDays = Math.floor(age*365.25);
+    this.gender = gender;
+    this.ses = ses;
   }
 
   setPreciseAge(month, day, year) {
