@@ -29,4 +29,7 @@ describe('Human', () => {
   test('.getPlanetAge("Jupiter") should return age in Jupiter years', () => {
     expect(reusableHuman.getPlanetAge('Jupiter')).toEqual('1.85');
   });
+  test('.getPlanetAge("Saturn") should return age in Saturn years', () => {
+    expect(reusableHuman.getPlanetAge('Saturn')).toEqual('0.75');
+  });
 });
