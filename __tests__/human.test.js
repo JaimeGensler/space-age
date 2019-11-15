@@ -9,10 +9,10 @@ describe('Human', () => {
 
   test('should correctly create a Human object that stores age in years and days', () => {
     expect(reusableHuman.age).toEqual(22);
-    expect(reusableHuman.daysAge).toEqual(8035.5);
+    expect(reusableHuman.ageInDays).toEqual(8035.5);
   });
 
-  test('.setPreciseAge() should precisely re-set age in days based on birthday and current date', () => {
-    expect(reusableHuman.setPreciseAge(7, 25, 1997)).toEqual(8148); //this test may fail when tried from future dates
+  test('.setPreciseAge() should precisely re-set and return age in days based on birthday and current date', () => {
+    expect(reusableHuman.setPreciseAge(7, 25, 1997)).toEqual(8148); //this test will fail when tried from future dates (Nov. 15, 2019)
   });
 });
