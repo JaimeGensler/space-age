@@ -34,7 +34,7 @@ export class Human {
     if (this.ses = 'Lower') expectedAge -= 5;
 
     const yearsLeft = (expectedAge - this.age).toFixed(2);
-    if (yearsLeft < 1) return ('surpassed life expectancy by ' + yearsLeft + ' years.');
-    return (yearsLeft + ' Earth years left');
+    if (yearsLeft < 0) return (`surpassed life expectancy by ${-1 * yearsLeft} years'`);
+    return (`${yearsLeft} Earth years left`);
   }
 }
