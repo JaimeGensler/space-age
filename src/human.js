@@ -28,12 +28,13 @@ export class Human {
   }
 
   yearsLeft(planet) {
-    const genders = {Male: 76.4, Female: 81.2, Other: 78.8};
+    const genders = {M: 76.4, F: 81.2, O: 78.8};
     let expectedAge = genders[this.gender];
     if (this.ses = 'Upper') expectedAge += 5;
     if (this.ses = 'Lower') expectedAge -= 5;
 
-    const ageOnPlanet = getPlanetAge(planet);
-    
+    const yearsLeft = (expectedAge - this.age).toFixed(2);
+    if (yearsLeft < 1) return ('surpassed life expectancy by ' + yearsLeft + ' years.');
+    return (yearsLeft + ' Earth years left');
   }
 }
