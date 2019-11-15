@@ -13,6 +13,6 @@ describe('Human', () => {
   });
 
   test('.setPreciseAge() should precisely re-set age in days based on birthday and current date', () => {
-    expect(reusableHuman.setPreciseAge(7, 25, 1997)).toEqual(8,879); //this test may fail when tried from future dates
+    expect(reusableHuman.setPreciseAge(7, 25, 1997)).toEqual(8148); //this test may fail when tried from future dates
   });
 });
