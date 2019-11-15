@@ -1,7 +1,7 @@
 export class Human {
   constructor(age) {
     this.age = age;
-    this.ageInDays = age*365.25;
+    this.ageInDays = Math.floor(age*365.25);
   }
 
   setPreciseAge(month, day, year) {
@@ -10,5 +10,12 @@ export class Human {
     this.ageInDays = Math.floor((today.getTime() - birthday.getTime())/(1000*60*60*24));
     this.age = Math.floor(this.ageInDays/365);
     return this.ageInDays;
+  }
+
+  getPlanetAge(planet) {
+    switch (planet) {
+      case 'Mercury':
+        return (this.ageInDays/88).toFixed(2);
+    }
   }
 }

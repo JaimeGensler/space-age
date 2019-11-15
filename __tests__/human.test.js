@@ -18,6 +18,6 @@ describe('Human', () => {
 
   //all remaining tests simply use (22 years) and should always pass
   test('.getPlanetAge("Mercury") should return age in Mercury years', () => {
-    expect(reusableHuman.getPlanetAge('Mercury')).toEqual('91.30');
+    expect(reusableHuman.getPlanetAge('Mercury')).toEqual('91.31');
   });
 });
