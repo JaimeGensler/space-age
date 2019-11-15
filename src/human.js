@@ -24,6 +24,8 @@ export class Human {
         return (this.ageInDays/4332).toFixed(2);
       case 'Saturn':
         return (this.ageInDays/10759).toFixed(2);
+      case 'Uranus':
+        return (this.ageInDays/30688).toFixed(2);
     }
   }
 }
