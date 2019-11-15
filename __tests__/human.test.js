@@ -20,4 +20,7 @@ describe('Human', () => {
   test('.getPlanetAge("Mercury") should return age in Mercury years', () => {
     expect(reusableHuman.getPlanetAge('Mercury')).toEqual('91.31');
   });
+  test('.getPlanetAge("Venus") should return age in Venus years', () => {
+    expect(reusableHuman.getPlanetAge('Venus')).toEqual('35.71');
+  });
 });
