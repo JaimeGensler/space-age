@@ -4,14 +4,14 @@ describe('Human', () => {
 
   let reusableHuman;
   beforeEach(() => {
-    reusableHuman = new Human(22);
+    reusableHuman = new Human(22, 'M', 'Middle');
   });
 
   test('should correctly create a Human object that stores age in years and days', () => {
     expect(reusableHuman.age).toEqual(22);
     expect(reusableHuman.ageInDays).toEqual(8035);
-    expect(reusableHuman.gender).toEqual(male);
-    expect(reusableHuman.ses).toEqual(middle);
+    expect(reusableHuman.gender).toEqual('M');
+    expect(reusableHuman.ses).toEqual('Middle');
   });
 
   test('.setPreciseAge() should precisely re-set and return age in days based on birthday and current date', () => {
