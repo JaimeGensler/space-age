@@ -13,21 +13,15 @@ export class Human {
   }
 
   getPlanetAge(planet) {
-    switch (planet) {
-      case 'Mercury':
-        return (this.ageInDays/88).toFixed(2);
-      case 'Venus':
-        return (this.ageInDays/225).toFixed(2);
-      case 'Mars':
-        return (this.ageInDays/687).toFixed(2);
-      case 'Jupiter':
-        return (this.ageInDays/4332).toFixed(2);
-      case 'Saturn':
-        return (this.ageInDays/10759).toFixed(2);
-      case 'Uranus':
-        return (this.ageInDays/30688).toFixed(2);
-      case 'Neptune':
-        return (this.ageInDays/60200).toFixed(2);
+    const planets = {
+      Mercury: 88,
+      Venus: 225,
+      Mars: 687,
+      Jupiter: 4332,
+      Saturn: 10759,
+      Uranus: 30688,
+      Neptune: 60200
     }
+    return (this.ageInDays/planets[planet]).toFixed(2);
   }
 }
