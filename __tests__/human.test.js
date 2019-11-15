@@ -9,6 +9,6 @@ describe('Human', () => {
 
   test('should correctly create a Human object that stores age in years and days', () => {
     expect(reusableHuman.age).toEqual(22);
-    expect(reusableHuman.daysAge).toEqual(8030);
+    expect(reusableHuman.daysAge).toEqual(8035.5);
   });
 });
