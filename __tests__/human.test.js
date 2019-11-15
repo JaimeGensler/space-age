@@ -10,6 +10,8 @@ describe('Human', () => {
   test('should correctly create a Human object that stores age in years and days', () => {
     expect(reusableHuman.age).toEqual(22);
     expect(reusableHuman.ageInDays).toEqual(8035);
+    expect(reusableHuman.gender).toEqual(male);
+    expect(reusableHuman.ses).toEqual(middle);
   });
 
   test('.setPreciseAge() should precisely re-set and return age in days based on birthday and current date', () => {
@@ -40,6 +42,6 @@ describe('Human', () => {
   });
 
   test('.yearsLeft(planet) should return either number of years left to live on a planet or number of years exceeding predictions', () => {
-    expect(reusableHuman.yearsLeft('Earth')).toEqual('54.4');
+    expect(reusableHuman.yearsLeft('Earth')).toEqual('54.4 Earth years left');
   });
 });
