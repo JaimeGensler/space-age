@@ -38,4 +38,8 @@ describe('Human', () => {
   test('.getPlanetAge("Neptune") should return age in Neptune years', () => {
     expect(reusableHuman.getPlanetAge('Neptune')).toEqual('0.13');
   });
+
+  test('.yearsLeft(planet) should return either number of years left to live on a planet or number of years exceeding predictions', () => {
+    expect(reusableHuman.yearsLeft('Earth')).toEqual('54.4');
+  });
 });
