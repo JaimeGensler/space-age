@@ -16,6 +16,8 @@ export class Human {
     switch (planet) {
       case 'Mercury':
         return (this.ageInDays/88).toFixed(2);
+      case 'Venus':
+        return (this.ageInDays/225).toFixed(2);
     }
   }
 }
