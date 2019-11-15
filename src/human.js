@@ -26,4 +26,14 @@ export class Human {
     }
     return (this.ageInDays/planets[planet]).toFixed(2);
   }
+
+  yearsLeft(planet) {
+    const genders = {Male: 76.4, Female: 81.2, Other: 78.8};
+    let expectedAge = genders[this.gender];
+    if (this.ses = 'Upper') expectedAge += 5;
+    if (this.ses = 'Lower') expectedAge -= 5;
+
+    const ageOnPlanet = getPlanetAge(planet);
+    
+  }
 }
