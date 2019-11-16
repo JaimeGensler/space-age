@@ -42,7 +42,8 @@ describe('Human', () => {
   });
 
   test('.yearsLeft(planet) should return either number of years left to live on a planet or number of years exceeding predictions', () => {
-    expect(reusableHuman.yearsLeft('Earth')).toEqual('54.4 Earth years left');
-    expect(reusableHuman.yearsLeft('Mars')).toEqual('28.9 Mars years left');
+    expect(reusableHuman.yearsLeft('Earth')).toEqual('54.44 Earth years left');
+    expect(reusableHuman.yearsLeft('Mars')).toEqual('28.92 Mars years left');
+    expect(reusableHuman.yearsLeft('Mercury')).toEqual('225.79 Mercury years left');
   });
 });
