@@ -37,7 +37,7 @@ export class Human {
     if (this.ses = 'Lower') expectedAge -= 5;
 
     const yearsLeft = this.getPlanetTime(planet, 365.25*(expectedAge - this.age));
-    if (yearsLeft < 0) return (`surpassed life expectancy by ${-1 * yearsLeft} years'`);
+    if (yearsLeft < 0) return (`surpassed life expectancy by ${-1 * yearsLeft} years`);
     return (`${yearsLeft} ${planet} years left`);
   }
 }
