@@ -1,0 +1,26 @@
+@keyframes slide {
+  from {background-position: 0px 0px}
+  to {background-position: 480px 480px;}
+}
+
+body {
+  background-image: url('./img/stars.gif');
+  background-repeat: repeat;
+  animation: slide 100s linear infinite;
+  margin: 0 0 0 0;
+}
+
+div#info {
+  position: fixed;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: black;;
+  border-left: 2px solid white;
+  text-align: center;
+}
+div#info h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 3em;
+}
