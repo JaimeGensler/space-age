@@ -1,26 +1,69 @@
-@keyframes slide {
+@keyframes bg-slide {
   from {background-position: 0px 0px}
   to {background-position: 480px 480px;}
+}
+@keyframes border-glow {
+  10% {box-shadow: -1px 0px 2px white;}
+  40% {box-shadow: -5px 0px 7px white;}
+  60% {box-shadow: -5px 0px 7px white;}
+  90% {box-shadow: -1px 0px 2px white;}
+}
+@keyframes text-bounce {
+  0% {font-size: 1.1em;}
+  50% {font-size: 1.25em;}
+  100% {font-size: 1.1em;}
 }
 
 body {
   background-image: url('./img/stars.gif');
   background-repeat: repeat;
-  animation: slide 100s linear infinite;
+  animation: bg-slide 120s linear infinite;
   margin: 0 0 0 0;
 }
 
-div#info {
-  position: fixed;
+
+
+div#sidebar {
+  position: absolute;
   right: 0;
   width: 25%;
   height: 100%;
-  background-color: black;;
+
+  background-color: black;
   border-left: 2px solid white;
+  animation: border-glow 5s linear infinite;
+
   text-align: center;
-}
-div#info h1 {
-  color: white;
   font-family: monospace;
+  color: white;
+}
+
+div#sidebar h1 {
   font-size: 3em;
+  margin-bottom: 0px;
+}
+
+div#bounce-container {
+  height: 1.5em;
+}
+div#bounce-container h3 {
+  font-style: italic;
+  animation: text-bounce 1.5s linear infinite;
+}
+
+form#user-info {
+  margin-top: 2.5em;
+}
+label.prompt {
+  margin-top: 1.5em;
+  margin-bottom: 5px;
+
+  display: block;
+  font-size: 1.25em;
+}
+input.input-short {
+  width: 40px;
+}
+input.input-long {
+  width: 80px;
 }
