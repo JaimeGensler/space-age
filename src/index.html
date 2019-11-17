@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Space Age</title>
   </head>
   <body>
 
-    <div id="info">
+    <div id='sidebar'>
       <h1>Space Age</h1>
+      <div id='bounce-container'>
+        <h3>Check your age on other planets!</h3>
+      </div>
+
+      <form id='user-info'>
+        <label for='dob' class='prompt'>What's your birthday?</label>
+        <input type='number' placeholder='MM' min='01' max='12' name='dob' class='input-short' required> /
+        <input type='number' placeholder='DD' min='01' max='31' name='dob' class='input-short' required> /
+        <input type='number' placeholder='YYYY' min='1900' max='2018' name='dob' class='input-long' required>
+      </form>
+
+
     </div>
-    
+
   </body>
 </html>
