@@ -14,7 +14,7 @@ _A JavaScript program to calculate your age on other planets! Includes support f
 | A more precise age (in days) can be set given a birthday                        | 7/25/1997          | Your age in days is: 8148 (Nov 15, 2019)              |
 | The program can return an age in any planet's "years"                           | Mercury // Jupiter | 22 years is 91.31 Mercury years // 1.85 Jupiter years |
 | The program can return the remaining life expectancy (in years) for each planet | Mars               | 28.92 Mars years left                                 |
-| If the user has exceeded their life expectancy, the program returns by how much | (M, 100) for Venus | surpassed life expectancy by 38.28 years  |
+| If the user has exceeded their life expectancy, the program returns by how much | (M, 100) for Venus | surpassed life expectancy by 38.28 years              |
 
 
 ## Setup/Installation Requirements
@@ -22,7 +22,7 @@ _A JavaScript program to calculate your age on other planets! Includes support f
 * _Clone this github repository_
 * _Open the project directory in terminal_
 * _Run 'npm install'_
-* _Run 'npm test' to see tested results, modify input to see your own results tested_
+* _Run 'npm run build' and open the index in dist/, or 'npm run start' to see the main page_
 * _Enjoy!_
 
 

@@ -5,16 +5,16 @@
     <title>Space Age</title>
   </head>
   <body>
-    <div id="space">
-      <div id="sun"></div>
-      <div class="planet" id="mercury"></div>
-      <div class="planet" id="venus"></div>
-      <div class="planet" id="earth"></div>
-      <div class="planet" id="mars"></div>
-      <div class="planet" id="jupiter"></div>
-      <div class="planet" id="saturn"></div>
-      <div class="planet" id="uranus"></div>
-      <div class="planet" id="neptune"></div>
+    <div id='space'>
+      <div id='sun'></div>
+      <div class='planet' id='Mercury'></div>
+      <div class='planet' id='Venus'></div>
+      <div class='planet' id='Earth'></div>
+      <div class='planet' id='Mars'></div>
+      <div class='planet' id='Jupiter'></div>
+      <div class='planet' id='Saturn'></div>
+      <div class='planet' id='Uranus'></div>
+      <div class='planet' id='Neptune'></div>
     </div>
 
     <div id='sidebar'>
@@ -24,24 +24,34 @@
       </div>
       <form id='user-info'>
         <label for='dob' class='prompt'>What's your birthday?</label>
-        <input type='number' placeholder='MM' min='01' max='12' name='dob' class='input-short' required> /
-        <input type='number' placeholder='DD' min='01' max='31' name='dob' class='input-short' required> /
-        <input type='number' placeholder='YYYY' min='1900' max='2018' name='dob' class='input-long' required>
+        <input type='number' placeholder='MM' min='01' max='12' name='dob' class='input-short' id='month' required> /
+        <input type='number' placeholder='DD' min='01' max='31' name='dob' class='input-short' id= 'day' required> /
+        <input type='number' placeholder='YYYY' min='1900' max='2018' name='dob' class='input-long' id='year' required>
 
-        <label for="gender" class='prompt'>What is your gender?</label>
-        <input type="radio" name="gender" value="M" required>Male
-        <input type="radio" name="gender" value="F">Female
-        <input type="radio" name="gender" value="O">Other
+        <label for='gender' class='prompt'>What is your gender?</label>
+        <input type='radio' name='gender' value='male' required>Male
+        <input type='radio' name='gender' value='female'>Female
+        <input type='radio' name='gender' value='other'>Other
 
-        <label for="ses" class='prompt'>Socio-economic status?</label>
-        <input type="radio" name="ses" value="lower" required>Lower Class
-        <input type="radio" name="ses" value="middle">Middle Class
-        <input type="radio" name="ses" value="upper">Upper Class
+        <label for='ses' class='prompt'>Socio-economic status?</label>
+        <input type='radio' name='ses' value='lower' required>Lower Class
+        <input type='radio' name='ses' value='middle'>Middle Class
+        <input type='radio' name='ses' value='upper'>Upper Class
 
-        <button type="submit" id="submit-info">Submit</button>
+        <button type='submit' id='submit-info'>Submit</button>
       </form>
 
       <hr>
+
+      <div id='planet-info'>
+        <h2 id='planet-name'></h2>
+        <p id='planet-age'></p>
+        <p id='planet-joke'></p>
+        <p id='planet-life'></p>
+
+        <h4>Click any planet for more details!</h4>
+      </div>
+
     </div>
 
   </body>

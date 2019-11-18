@@ -63,6 +63,12 @@ input.input-short {
 input.input-long {
   width: 70px;
 }
+div#planet-info {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
 
 div#space {
   position: absolute;
@@ -72,7 +78,6 @@ div#space {
 
   display: flex;
 }
-
 div#sun, div.planet {
   position: absolute;
   left: 50%;
@@ -93,46 +98,48 @@ div.planet {
   background-repeat: no-repeat;
   width: 5em;
   height: 5em;
-}
-div.planet:hover {
   cursor: pointer;
 }
-div#mercury {
+div#Mercury {
   background-image: url('./img/mercury.png');
   margin-left: -150px;
   margin-top: -100px;
 }
-div#venus {
+div#Venus {
   background-image: url('./img/venus.png');
   margin-left: 80px;
 }
-div#earth {
+div#Earth {
   background-image: url('./img/earth.png');
   margin-left: -170px;
   margin-top: 70px;
 }
-div#mars {
+div#Mars {
   background-image: url('./img/mars.png');
   margin-left: 220px;
   margin-top: -40px;
 }
-div#jupiter {
+div#Jupiter {
   background-image: url('./img/jupiter.png');
   margin-left: -300px;
   margin-top: -200px;
 }
-div#saturn {
+div#Saturn {
   background-image: url('./img/saturn.png');
   margin-left: 250px;
   margin-top: 100px;
 }
-div#uranus {
+div#Uranus {
   background-image: url('./img/uranus.png');
   margin-left: -350px;
   margin-top: 30px;
 }
-div#neptune {
+div#Neptune {
   background-image: url('./img/neptune.png');
   margin-left: 150px;
   margin-top: -200px;
+}
+
+div#planet-info h4 {
+  margin-top: 50px;
 }
