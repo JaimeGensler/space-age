@@ -51,7 +51,7 @@ div#bounce-container h3 {
   animation: text-bounce 1.5s linear infinite;
 }
 
-form#user-info {
+form#user-info, button#submit-info{
   margin-top: 2.5em;
 }
 label.prompt {
@@ -65,5 +65,5 @@ input.input-short {
   width: 40px;
 }
 input.input-long {
-  width: 80px;
+  width: 70px;
 }

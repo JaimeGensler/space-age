@@ -19,11 +19,19 @@
         <input type='number' placeholder='YYYY' min='1900' max='2018' name='dob' class='input-long' required>
 
         <label for="gender" class='prompt'>What is your gender?</label>
-        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="M" required>Male
         <input type="radio" name="gender" value="F">Female
         <input type="radio" name="gender" value="O">Other
+
+        <label for="ses" class='prompt'>Socio-economic status?</label>
+        <input type="radio" name="ses" value="lower" required>Lower Class
+        <input type="radio" name="ses" value="middle">Middle Class
+        <input type="radio" name="ses" value="upper">Upper Class
+
+        <button type="submit" id="submit-info">Submit</button>
       </form>
 
+      <hr>
 
     </div>
 
