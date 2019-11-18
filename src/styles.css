@@ -21,8 +21,6 @@ body {
   margin: 0 0 0 0;
 }
 
-
-
 div#sidebar {
   position: absolute;
   right: 0;
@@ -37,12 +35,10 @@ div#sidebar {
   font-family: monospace;
   color: white;
 }
-
 div#sidebar h1 {
   font-size: 3em;
   margin-bottom: 0px;
 }
-
 div#bounce-container {
   height: 1.5em;
 }
@@ -66,4 +62,77 @@ input.input-short {
 }
 input.input-long {
   width: 70px;
+}
+
+div#space {
+  position: absolute;
+  left: 0;
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+}
+
+div#sun, div.planet {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+div#sun {
+  background-image: url('./img/sun.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 7.5em;
+  height: 7.5em;
+
+  margin-left: -75px;
+  margin-top: -75px;
+}
+div.planet {
+  background-size: 85%;
+  background-repeat: no-repeat;
+  width: 5em;
+  height: 5em;
+}
+div.planet:hover {
+  cursor: pointer;
+}
+div#mercury {
+  background-image: url('./img/mercury.png');
+  margin-left: -150px;
+  margin-top: -100px;
+}
+div#venus {
+  background-image: url('./img/venus.png');
+  margin-left: 80px;
+}
+div#earth {
+  background-image: url('./img/earth.png');
+  margin-left: -170px;
+  margin-top: 70px;
+}
+div#mars {
+  background-image: url('./img/mars.png');
+  margin-left: 220px;
+  margin-top: -40px;
+}
+div#jupiter {
+  background-image: url('./img/jupiter.png');
+  margin-left: -300px;
+  margin-top: -200px;
+}
+div#saturn {
+  background-image: url('./img/saturn.png');
+  margin-left: 250px;
+  margin-top: 100px;
+}
+div#uranus {
+  background-image: url('./img/uranus.png');
+  margin-left: -350px;
+  margin-top: 30px;
+}
+div#neptune {
+  background-image: url('./img/neptune.png');
+  margin-left: 150px;
+  margin-top: -200px;
 }
